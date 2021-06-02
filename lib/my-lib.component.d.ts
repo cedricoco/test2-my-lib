@@ -7,11 +7,6 @@ export interface Data {
     style: "line" | "area" | "both";
     interpolation: "linear" | "step";
 }
-export interface DATA<T> {
-    timestamp: number;
-    value: T;
-    sensorId: string;
-}
 export declare function parseBool(s: string): 1 | 0 | -1;
 export declare class MyLibComponent implements OnInit {
     private renderer;
